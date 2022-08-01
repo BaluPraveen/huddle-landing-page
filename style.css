@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+*{
+    font-family: 'Poppins','Open Sans', sans-serif;
+}
+body{
+    min-height: 100vh;
+    background-image: url(/images/bg-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+}
+.hero{
+    padding: 30px;
+}
+header{
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.container{
+    display: flex;
+    color: white;
+}
+.container .col{
+    margin-left: 30px;
+}
+.container .col h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.col p{
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.container .col a{
+    text-decoration: none;
+    color: hsl(300, 69%, 71%);
+    box-shadow: 2px 8px 14px 0px hsl(229, 6%, 66%);
+    background-color:white;
+    padding: 15px 60px 15px 60px;
+    border-radius: 30px;
+}
+.container .col a:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+.footer{
+    margin-bottom: auto;
+    margin-left: 1100px;
+}
+.footer .fa-brands{
+    width: 50px;
+    font-size: 30px;
+    color: white;
+}
+.footer .fa-brands:hover{
+    color:hsl(300, 69%, 71%) ;
+}
+@media (max-width:375px)  {
+    .container{
+        flex-direction: column;
+        width: 300px;
+    }
+    .container img{
+        margin: 0;
+        width: 250px;
+    }
+    .container .col{
+        text-align: center;
+    }
+    .footer{
+        margin:0;
+        padding: 50px 0 0 100px;
+    }
+}
